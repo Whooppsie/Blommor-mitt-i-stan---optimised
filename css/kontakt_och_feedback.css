@@ -1,0 +1,173 @@
+body{
+  background-color: pink;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 3%;
+  font-size: 15px;
+}
+
+.mainmenu{
+  background-color: rgb(250, 241, 230);
+  padding: 8px 0;
+  padding-left: 8px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.mainmenu a {
+  float: left;
+  color: #292828;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.mainmenu a:hover {
+  background-color: rgb(228, 147, 147);
+  color: black;
+}
+
+.mainmenu a.active {
+  background-color: #9ccebc;
+  color: black;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.form{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input{
+  border: thin;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#email{
+  margin-bottom: 5px;
+}
+
+.fraga{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#feedback{
+  width: 500px;
+  padding: 10px;
+  border-radius: 4px;
+  border: thin;
+  resize: vertical;
+}
+
+#button{
+  font-size: 15px;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); 
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #ffdeeb;
+  width: 450px;
+  max-width: 70%;
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1); 
+}
+
+.modal-header{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body{
+  padding: 10px 15px;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media screen and (max-width: 420px) {
+  #feedback{
+  max-width: 95%;
+  }
+
+  .input{
+    margin-top: 5px;
+  }
+
+  #lname {
+    margin-bottom: 15px;
+  }
+
+  .fraga{
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  body{
+    background-color: rgb(255, 206, 214);
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 794px){
+  h1{
+      font-size: 40px;
+    }
+}
